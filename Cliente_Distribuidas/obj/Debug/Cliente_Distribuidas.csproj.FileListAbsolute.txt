@@ -29,3 +29,6 @@ C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_
 C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\obj\Debug\Cliente_Distribuidas.csproj.CopyComplete
 C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\obj\Debug\Cliente_Distribuidas.exe
 C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\obj\Debug\Cliente_Distribuidas.pdb
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\bin\Debug\Datos_Distribuidas.dll
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\bin\Debug\Datos_Distribuidas.pdb
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\bin\Debug\Datos_Distribuidas.dll.config
