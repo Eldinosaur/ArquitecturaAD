@@ -1,0 +1,31 @@
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\bin\Debug\Cliente_Distribuidas.exe.config
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\bin\Debug\Cliente_Distribuidas.exe
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\bin\Debug\Cliente_Distribuidas.pdb
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\bin\Debug\Entidades_Distribuidas.dll
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\bin\Debug\Negocio_Distribuidas.dll
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\bin\Debug\Entidades_Distribuidas.pdb
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\bin\Debug\Negocio_Distribuidas.pdb
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\obj\Debug\Cliente_Distribuidas.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\obj\Debug\Cliente_Distribuidas.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\obj\Debug\Cliente_Distribuidas.Form1.resources
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\obj\Debug\Cliente_Distribuidas.Properties.Resources.resources
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\obj\Debug\Cliente_Distribuidas.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\obj\Debug\Cliente_Distribuidas.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\obj\Debug\Cliente_Distribuidas.csproj.CopyComplete
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\obj\Debug\Cliente_Distribuidas.exe
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\obj\Debug\Cliente_Distribuidas.pdb
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\bin\Debug\Cliente_Distribuidas.exe.config
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\bin\Debug\Cliente_Distribuidas.exe
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\bin\Debug\Cliente_Distribuidas.pdb
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\bin\Debug\Entidades_Distribuidas.dll
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\bin\Debug\Negocio_Distribuidas.dll
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\bin\Debug\Entidades_Distribuidas.pdb
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\bin\Debug\Negocio_Distribuidas.pdb
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\obj\Debug\Cliente_Distribuidas.csproj.AssemblyReference.cache
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\obj\Debug\Cliente_Distribuidas.Form_Pacientes.resources
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\obj\Debug\Cliente_Distribuidas.Properties.Resources.resources
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\obj\Debug\Cliente_Distribuidas.csproj.GenerateResource.cache
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\obj\Debug\Cliente_Distribuidas.csproj.CoreCompileInputs.cache
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\obj\Debug\Cliente_Distribuidas.csproj.CopyComplete
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\obj\Debug\Cliente_Distribuidas.exe
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Cliente_Distribuidas\obj\Debug\Cliente_Distribuidas.pdb

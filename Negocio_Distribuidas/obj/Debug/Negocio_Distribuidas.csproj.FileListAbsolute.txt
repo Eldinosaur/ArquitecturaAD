@@ -1,0 +1,22 @@
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Negocio_Distribuidas\bin\Debug\Negocio_Distribuidas.dll
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Negocio_Distribuidas\bin\Debug\Negocio_Distribuidas.pdb
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Negocio_Distribuidas\obj\Debug\Negocio_Distribuidas.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Negocio_Distribuidas\obj\Debug\Negocio_Distribuidas.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Negocio_Distribuidas\obj\Debug\Negocio_Distribuidas.dll
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Negocio_Distribuidas\obj\Debug\Negocio_Distribuidas.pdb
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Negocio_Distribuidas\bin\Debug\Datos_Distribuidas.dll
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Negocio_Distribuidas\bin\Debug\Entidades_Distribuidas.dll
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Negocio_Distribuidas\bin\Debug\Datos_Distribuidas.pdb
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Negocio_Distribuidas\bin\Debug\Entidades_Distribuidas.pdb
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Negocio_Distribuidas\obj\Debug\Negocio_Distribuidas.csproj.CopyComplete
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Negocio_Distribuidas\bin\Debug\Negocio_Distribuidas.dll
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Negocio_Distribuidas\bin\Debug\Negocio_Distribuidas.pdb
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Negocio_Distribuidas\bin\Debug\Datos_Distribuidas.dll
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Negocio_Distribuidas\bin\Debug\Entidades_Distribuidas.dll
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Negocio_Distribuidas\bin\Debug\Datos_Distribuidas.pdb
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Negocio_Distribuidas\bin\Debug\Entidades_Distribuidas.pdb
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Negocio_Distribuidas\obj\Debug\Negocio_Distribuidas.csproj.AssemblyReference.cache
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Negocio_Distribuidas\obj\Debug\Negocio_Distribuidas.csproj.CoreCompileInputs.cache
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Negocio_Distribuidas\obj\Debug\Negocio_Distribuidas.csproj.CopyComplete
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Negocio_Distribuidas\obj\Debug\Negocio_Distribuidas.dll
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Negocio_Distribuidas\obj\Debug\Negocio_Distribuidas.pdb

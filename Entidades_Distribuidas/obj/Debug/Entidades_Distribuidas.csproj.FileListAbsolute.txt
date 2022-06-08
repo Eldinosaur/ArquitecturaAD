@@ -1,0 +1,12 @@
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Entidades_Distribuidas\bin\Debug\Entidades_Distribuidas.dll
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Entidades_Distribuidas\bin\Debug\Entidades_Distribuidas.pdb
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Entidades_Distribuidas\obj\Debug\Entidades_Distribuidas.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Entidades_Distribuidas\obj\Debug\Entidades_Distribuidas.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Entidades_Distribuidas\obj\Debug\Entidades_Distribuidas.dll
+C:\Users\Admin\Desktop\AD_Proyectos\ArquitecturaAD\Entidades_Distribuidas\obj\Debug\Entidades_Distribuidas.pdb
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Entidades_Distribuidas\bin\Debug\Entidades_Distribuidas.dll
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Entidades_Distribuidas\bin\Debug\Entidades_Distribuidas.pdb
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Entidades_Distribuidas\obj\Debug\Entidades_Distribuidas.csproj.AssemblyReference.cache
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Entidades_Distribuidas\obj\Debug\Entidades_Distribuidas.csproj.CoreCompileInputs.cache
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Entidades_Distribuidas\obj\Debug\Entidades_Distribuidas.dll
+C:\Users\Eldinosaur\Desktop\6to Semestre\Aplicaciones distribuidas\Proyectos\AD_Proyectos\ArquitecturaAD\Entidades_Distribuidas\obj\Debug\Entidades_Distribuidas.pdb
