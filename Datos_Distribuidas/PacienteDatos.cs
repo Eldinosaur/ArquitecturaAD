@@ -85,5 +85,48 @@ namespace Datos_Distribuidas
                 throw;
             }
         }
+
+        public static List<PacienteEntidad> DevolverListadoPacientes()
+        {
+            try
+            {
+                List<PacienteEntidad> listaPacientes = new List<PacienteEntidad>();
+                SqlConnection conexion = new SqlConnection(Properties.Settings.Default.conexionBD);
+                conexion.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conexion;
+                cmd.CommandType = CommandType.Text;
+
+                cmd.CommandText = @"SELECT [id]
+                                      ,[nombre]
+                                      ,[apellido]
+                                      ,[cedula]
+                                      ,[telefono]
+                                      ,[direccion]
+                                  FROM [dbo].[Paciente]";
+
+                //using lo que se usa se libera de memoria despues de la ejecucion
+                using (var dr = cmd.ExecuteReader()) //dr data reader para leer los datos de la base
+                {
+                    while (dr.Read())
+                    {
+                        PacienteEntidad paciente = new PacienteEntidad();
+                        paciente.Id = Convert.ToInt32( dr["id"].ToString());
+                        paciente.Nombre = dr["nombre"].ToString();
+                        paciente.Apellido = dr["apellido"].ToString();
+                        paciente.Cedula = dr["cedula"].ToString();
+                        paciente.Telefono = dr["telefono"].ToString();
+                        paciente.Direccion = dr["direccion"].ToString();
+                        listaPacientes.Add(paciente);
+                    }
+                }
+                conexion.Close();
+                return listaPacientes;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }

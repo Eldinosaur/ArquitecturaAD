@@ -24,5 +24,9 @@ namespace Negocio_Distribuidas
                 return PacienteDatos.Actualizar(pacienteEntidad);
             }
         }
+        public static List<PacienteEntidad> DevolverListadoPacientes()
+        {
+            return PacienteDatos.DevolverListadoPacientes();
+        }
     }
 }

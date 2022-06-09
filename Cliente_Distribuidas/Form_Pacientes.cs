@@ -43,8 +43,24 @@ namespace Cliente_Distribuidas
             {
                 textBox_ID.Text = paciente.Id.ToString();
                 MessageBox.Show("los datos se insertaron satisfactoriamente");
+                CargarListadoPacientesDataGrid();
             }
 
+        }
+
+        private void Form_Pacientes_Load(object sender, EventArgs e)
+        {
+            CargarValoresIniciales();
+        }
+
+        private void CargarValoresIniciales()
+        {
+            CargarListadoPacientesDataGrid();
+        }
+
+        private void CargarListadoPacientesDataGrid()
+        {
+            dataGridView_PACIENTES.DataSource = PacienteNegocio.DevolverListadoPacientes();
         }
     }
 }
