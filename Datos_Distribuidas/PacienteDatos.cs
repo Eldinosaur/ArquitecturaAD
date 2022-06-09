@@ -28,14 +28,16 @@ namespace Datos_Distribuidas
                                                 ,[telefono]
                                                 ,[direccion])
                                                 VALUES
-                                                (@nombre, @apellido, @cedula, @telefono, @direccion)";
-                cmd.Parameters.AddWithValue("@nombre",pacienteEntidad.Nombre);
-                cmd.Parameters.AddWithValue("@apellido",pacienteEntidad.Apellido);
-                cmd.Parameters.AddWithValue("@cedula",pacienteEntidad.Cedula);
-                cmd.Parameters.AddWithValue("@telefono",pacienteEntidad.Telefono);
-                cmd.Parameters.AddWithValue("@direccion",pacienteEntidad.Direccion);
+                                                (@nombre, @apellido, @cedula, @telefono, @direccion);
+                                                SELECT SCOPE_IDENTITY()";
+                cmd.Parameters.AddWithValue("@nombre", pacienteEntidad.Nombre);
+                cmd.Parameters.AddWithValue("@apellido", pacienteEntidad.Apellido);
+                cmd.Parameters.AddWithValue("@cedula", pacienteEntidad.Cedula);
+                cmd.Parameters.AddWithValue("@telefono", pacienteEntidad.Telefono);
+                cmd.Parameters.AddWithValue("@direccion", pacienteEntidad.Direccion);
 
-                cmd.ExecuteScalar();
+                int IdPaciente=Convert.ToInt32(cmd.ExecuteScalar());
+                pacienteEntidad.Id = IdPaciente;
 
                 conexion.Close();
 
