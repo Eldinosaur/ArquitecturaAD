@@ -43,15 +43,47 @@ namespace Datos_Distribuidas
 
                 return pacienteEntidad;
             }
-            catch(Exception)
+            catch(Exception e)
             {
+                string error = e.Message;
                 throw;
             }
         }
         public static PacienteEntidad Actualizar(PacienteEntidad pacienteEntidad)
         {
-            //TODO: se debe programar la actualizacion del paciente
-            return null;
+            try
+            {
+                SqlConnection conexion = new SqlConnection(Properties.Settings.Default.conexionBD);
+                conexion.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conexion;
+                cmd.CommandType = CommandType.Text;
+
+                cmd.CommandText = @"UPDATE [dbo].[Paciente]
+                                   SET [nombre] = @nombre
+                                      ,[apellido] = @apellido
+                                      ,[cedula] = @cedula
+                                      ,[telefono] = @telefono
+                                      ,[direccion] = @direccion
+                                       WHERE id = @id";
+                cmd.Parameters.AddWithValue("@nombre", pacienteEntidad.Nombre);
+                cmd.Parameters.AddWithValue("@apellido", pacienteEntidad.Apellido);
+                cmd.Parameters.AddWithValue("@cedula", pacienteEntidad.Cedula);
+                cmd.Parameters.AddWithValue("@telefono", pacienteEntidad.Telefono);
+                cmd.Parameters.AddWithValue("@direccion", pacienteEntidad.Direccion);
+                cmd.Parameters.AddWithValue("@id", pacienteEntidad.Id);
+
+                cmd.ExecuteNonQuery();
+
+                conexion.Close();
+
+                return pacienteEntidad;
+            }
+            catch (Exception e)
+            {
+                string error = e.Message;
+                throw;
+            }
         }
     }
 }

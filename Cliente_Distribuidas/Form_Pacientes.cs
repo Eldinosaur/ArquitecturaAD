@@ -38,7 +38,12 @@ namespace Cliente_Distribuidas
             paciente.Telefono = textBox_TELEFONO.Text;
             paciente.Direccion = textBox_DIRECCION.Text;
 
-            PacienteNegocio.GuardarPacienteNegocio(paciente);
+            paciente = PacienteNegocio.GuardarPacienteNegocio(paciente);
+            if(paciente != null)
+            {
+                textBox_ID.Text = paciente.Id.ToString();
+                MessageBox.Show("los datos se insertaron satisfactoriamente");
+            }
 
         }
     }
