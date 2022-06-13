@@ -81,7 +81,7 @@
             this.textBox_numeroIESS.MaxLength = 10;
             this.textBox_numeroIESS.Name = "textBox_numeroIESS";
             this.textBox_numeroIESS.Size = new System.Drawing.Size(220, 20);
-            this.textBox_numeroIESS.TabIndex = 14;
+            this.textBox_numeroIESS.TabIndex = 7;
             // 
             // label7
             // 
@@ -97,7 +97,7 @@
             this.button_GUARDAR.Location = new System.Drawing.Point(107, 586);
             this.button_GUARDAR.Name = "button_GUARDAR";
             this.button_GUARDAR.Size = new System.Drawing.Size(98, 39);
-            this.button_GUARDAR.TabIndex = 12;
+            this.button_GUARDAR.TabIndex = 8;
             this.button_GUARDAR.Text = "GUARDAR";
             this.button_GUARDAR.UseVisualStyleBackColor = true;
             this.button_GUARDAR.Click += new System.EventHandler(this.button_GUARDAR_Click);
@@ -108,7 +108,7 @@
             this.textBox_NOMBRE.MaxLength = 50;
             this.textBox_NOMBRE.Name = "textBox_NOMBRE";
             this.textBox_NOMBRE.Size = new System.Drawing.Size(220, 20);
-            this.textBox_NOMBRE.TabIndex = 11;
+            this.textBox_NOMBRE.TabIndex = 2;
             // 
             // label6
             // 
@@ -125,7 +125,7 @@
             this.textBox_APELLIDO.MaxLength = 50;
             this.textBox_APELLIDO.Name = "textBox_APELLIDO";
             this.textBox_APELLIDO.Size = new System.Drawing.Size(220, 20);
-            this.textBox_APELLIDO.TabIndex = 9;
+            this.textBox_APELLIDO.TabIndex = 3;
             // 
             // label5
             // 
@@ -142,7 +142,7 @@
             this.textBox_CEDULA.MaxLength = 10;
             this.textBox_CEDULA.Name = "textBox_CEDULA";
             this.textBox_CEDULA.Size = new System.Drawing.Size(220, 20);
-            this.textBox_CEDULA.TabIndex = 7;
+            this.textBox_CEDULA.TabIndex = 4;
             // 
             // label4
             // 
@@ -177,7 +177,7 @@
             this.textBox_DIRECCION.Multiline = true;
             this.textBox_DIRECCION.Name = "textBox_DIRECCION";
             this.textBox_DIRECCION.Size = new System.Drawing.Size(220, 83);
-            this.textBox_DIRECCION.TabIndex = 3;
+            this.textBox_DIRECCION.TabIndex = 6;
             // 
             // label2
             // 
