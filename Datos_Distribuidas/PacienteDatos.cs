@@ -128,7 +128,7 @@ namespace Datos_Distribuidas
                 throw;
             }
         }
-        public static PacienteEntidad DevolverPacientePorID(int IdPaciente)
+        public static PacienteEntidad DevolverPacientePorID(int idPaciente)
         {
             try
             {
@@ -138,18 +138,20 @@ namespace Datos_Distribuidas
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conexion;
                 cmd.CommandType = CommandType.Text;
-
                 cmd.CommandText = @"SELECT [id]
                                       ,[nombre]
                                       ,[apellido]
                                       ,[cedula]
                                       ,[telefono]
                                       ,[direccion]
-                                  FROM [dbo].[Paciente]
-                                  WHERE id = @id";
-                cmd.Parameters.AddWithValue("@id", IdPaciente);
+                                    FROM[dbo].[Paciente]
+                                          WHERE id=@id";
+                ;
+
+                cmd.Parameters.AddWithValue("@id", idPaciente);
                 using (var dr = cmd.ExecuteReader())
                 {
+                    dr.Read();
                     if (dr.HasRows)
                     {
                         paciente.Id = Convert.ToInt32(dr["id"].ToString());
@@ -159,17 +161,19 @@ namespace Datos_Distribuidas
                         paciente.Telefono = dr["telefono"].ToString();
                         paciente.Direccion = dr["direccion"].ToString();
                     }
-                }
+                }//se libera de memoria al terminar
+
                 conexion.Close();
                 return paciente;
+
             }
             catch (Exception)
             {
 
                 throw;
             }
-           
-            
+
+
         }
     }
 }
