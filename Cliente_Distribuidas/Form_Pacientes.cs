@@ -62,5 +62,25 @@ namespace Cliente_Distribuidas
         {
             dataGridView_PACIENTES.DataSource = PacienteNegocio.DevolverListadoPacientes();
         }
+
+        private void dataGridView_PACIENTES_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var id = Convert.ToInt32(dataGridView_PACIENTES.Rows[e.RowIndex].Cells["id"].Value.ToString());
+            CargarPacientePorId(id);
+        }
+
+        private void CargarPacientePorId(int id)
+        {
+            //TODO: Invocar los datos desde la base de datos
+            paciente = PacienteNegocio.DevolverPacientePorID(id);
+
+            //TODO: Los resultados los vamos a cargar en el formulario
+            textBox_ID.Text = paciente.Id.ToString();
+            textBox_NOMBRE.Text = paciente.Nombre;
+            textBox_APELLIDO.Text = paciente.Apellido;
+            textBox_CEDULA.Text = paciente.Cedula;
+            textBox_TELEFONO.Text = paciente.Telefono;
+            textBox_DIRECCION.Text = paciente.Direccion;
+        }
     }
 }

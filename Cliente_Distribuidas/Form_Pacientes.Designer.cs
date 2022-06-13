@@ -202,6 +202,7 @@
             this.dataGridView_PACIENTES.Name = "dataGridView_PACIENTES";
             this.dataGridView_PACIENTES.Size = new System.Drawing.Size(716, 630);
             this.dataGridView_PACIENTES.TabIndex = 0;
+            this.dataGridView_PACIENTES.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_PACIENTES_CellClick);
             // 
             // Form_Pacientes
             // 

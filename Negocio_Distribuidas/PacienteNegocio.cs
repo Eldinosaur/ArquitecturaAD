@@ -28,5 +28,9 @@ namespace Negocio_Distribuidas
         {
             return PacienteDatos.DevolverListadoPacientes();
         }
+        public static PacienteEntidad DevolverPacientePorID(int IdPaciente)
+        {
+            return PacienteDatos.DevolverPacientePorID(IdPaciente);
+        }
     }
 }

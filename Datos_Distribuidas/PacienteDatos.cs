@@ -128,5 +128,48 @@ namespace Datos_Distribuidas
                 throw;
             }
         }
+        public static PacienteEntidad DevolverPacientePorID(int IdPaciente)
+        {
+            try
+            {
+                PacienteEntidad paciente = new PacienteEntidad();
+                SqlConnection conexion = new SqlConnection(Properties.Settings.Default.conexionBD);
+                conexion.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conexion;
+                cmd.CommandType = CommandType.Text;
+
+                cmd.CommandText = @"SELECT [id]
+                                      ,[nombre]
+                                      ,[apellido]
+                                      ,[cedula]
+                                      ,[telefono]
+                                      ,[direccion]
+                                  FROM [dbo].[Paciente]
+                                  WHERE id = @id";
+                cmd.Parameters.AddWithValue("@id", IdPaciente);
+                using (var dr = cmd.ExecuteReader())
+                {
+                    if (dr.HasRows)
+                    {
+                        paciente.Id = Convert.ToInt32(dr["id"].ToString());
+                        paciente.Nombre = dr["nombre"].ToString();
+                        paciente.Apellido = dr["apellido"].ToString();
+                        paciente.Cedula = dr["cedula"].ToString();
+                        paciente.Telefono = dr["telefono"].ToString();
+                        paciente.Direccion = dr["direccion"].ToString();
+                    }
+                }
+                conexion.Close();
+                return paciente;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+           
+            
+        }
     }
 }
