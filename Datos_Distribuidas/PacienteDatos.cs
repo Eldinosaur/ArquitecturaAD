@@ -26,15 +26,17 @@ namespace Datos_Distribuidas
                                                 ,[apellido]
                                                 ,[cedula]
                                                 ,[telefono]
-                                                ,[direccion])
+                                                ,[direccion]
+                                                ,[numeroIESS])
                                                 VALUES
-                                                (@nombre, @apellido, @cedula, @telefono, @direccion);
+                                                (@nombre, @apellido, @cedula, @telefono, @direccion, @numeroIESS);
                                                 SELECT SCOPE_IDENTITY()";
                 cmd.Parameters.AddWithValue("@nombre", pacienteEntidad.Nombre);
                 cmd.Parameters.AddWithValue("@apellido", pacienteEntidad.Apellido);
                 cmd.Parameters.AddWithValue("@cedula", pacienteEntidad.Cedula);
                 cmd.Parameters.AddWithValue("@telefono", pacienteEntidad.Telefono);
                 cmd.Parameters.AddWithValue("@direccion", pacienteEntidad.Direccion);
+                cmd.Parameters.AddWithValue("@numeroIESS", pacienteEntidad.NumeroIESS);
 
                 int IdPaciente=Convert.ToInt32(cmd.ExecuteScalar());
                 pacienteEntidad.Id = IdPaciente;
@@ -65,12 +67,15 @@ namespace Datos_Distribuidas
                                       ,[cedula] = @cedula
                                       ,[telefono] = @telefono
                                       ,[direccion] = @direccion
+                                      ,[numeroIESS] =@numeroIESS
                                        WHERE id = @id";
                 cmd.Parameters.AddWithValue("@nombre", pacienteEntidad.Nombre);
                 cmd.Parameters.AddWithValue("@apellido", pacienteEntidad.Apellido);
                 cmd.Parameters.AddWithValue("@cedula", pacienteEntidad.Cedula);
                 cmd.Parameters.AddWithValue("@telefono", pacienteEntidad.Telefono);
                 cmd.Parameters.AddWithValue("@direccion", pacienteEntidad.Direccion);
+
+                cmd.Parameters.AddWithValue("@numeroIESS", pacienteEntidad.NumeroIESS);
                 cmd.Parameters.AddWithValue("@id", pacienteEntidad.Id);
 
                 cmd.ExecuteNonQuery();
@@ -103,6 +108,7 @@ namespace Datos_Distribuidas
                                       ,[cedula]
                                       ,[telefono]
                                       ,[direccion]
+                                      ,[numeroIESS]
                                   FROM [dbo].[Paciente]";
 
                 //using lo que se usa se libera de memoria despues de la ejecucion
@@ -117,6 +123,7 @@ namespace Datos_Distribuidas
                         paciente.Cedula = dr["cedula"].ToString();
                         paciente.Telefono = dr["telefono"].ToString();
                         paciente.Direccion = dr["direccion"].ToString();
+                        paciente.NumeroIESS = dr["numeroIESS"].ToString();
                         listaPacientes.Add(paciente);
                     }
                 }
@@ -144,6 +151,7 @@ namespace Datos_Distribuidas
                                       ,[cedula]
                                       ,[telefono]
                                       ,[direccion]
+                                      ,[numeroIESS]
                                     FROM[dbo].[Paciente]
                                           WHERE id=@id";
                 ;
@@ -160,6 +168,7 @@ namespace Datos_Distribuidas
                         paciente.Cedula = dr["cedula"].ToString();
                         paciente.Telefono = dr["telefono"].ToString();
                         paciente.Direccion = dr["direccion"].ToString();
+                        paciente.NumeroIESS = dr["numeroIESS"].ToString();
                     }
                 }//se libera de memoria al terminar
 

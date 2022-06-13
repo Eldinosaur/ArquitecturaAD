@@ -37,6 +37,7 @@ namespace Cliente_Distribuidas
             paciente.Cedula = textBox_CEDULA.Text;
             paciente.Telefono = textBox_TELEFONO.Text;
             paciente.Direccion = textBox_DIRECCION.Text;
+            paciente.NumeroIESS = textBox_numeroIESS.Text;
 
             paciente = PacienteNegocio.GuardarPacienteNegocio(paciente);
             if(paciente != null)
@@ -81,6 +82,9 @@ namespace Cliente_Distribuidas
             textBox_CEDULA.Text = paciente.Cedula;
             textBox_TELEFONO.Text = paciente.Telefono;
             textBox_DIRECCION.Text = paciente.Direccion;
+            textBox_numeroIESS.Text = paciente.NumeroIESS;
         }
+
+        
     }
 }

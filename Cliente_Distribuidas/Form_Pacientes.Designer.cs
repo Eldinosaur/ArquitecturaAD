@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox_numeroIESS = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.button_GUARDAR = new System.Windows.Forms.Button();
             this.textBox_NOMBRE = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -51,6 +53,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBox_numeroIESS);
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.button_GUARDAR);
             this.groupBox1.Controls.Add(this.textBox_NOMBRE);
             this.groupBox1.Controls.Add(this.label6);
@@ -71,9 +75,26 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DATOS PACIENTE";
             // 
+            // textBox_numeroIESS
+            // 
+            this.textBox_numeroIESS.Location = new System.Drawing.Point(17, 467);
+            this.textBox_numeroIESS.MaxLength = 10;
+            this.textBox_numeroIESS.Name = "textBox_numeroIESS";
+            this.textBox_numeroIESS.Size = new System.Drawing.Size(220, 20);
+            this.textBox_numeroIESS.TabIndex = 14;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(14, 451);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(71, 13);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Numero IESS";
+            // 
             // button_GUARDAR
             // 
-            this.button_GUARDAR.Location = new System.Drawing.Point(99, 505);
+            this.button_GUARDAR.Location = new System.Drawing.Point(107, 586);
             this.button_GUARDAR.Name = "button_GUARDAR";
             this.button_GUARDAR.Size = new System.Drawing.Size(98, 39);
             this.button_GUARDAR.TabIndex = 12;
@@ -241,6 +262,8 @@
         private System.Windows.Forms.TextBox textBox_ID;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridView_PACIENTES;
+        private System.Windows.Forms.TextBox textBox_numeroIESS;
+        private System.Windows.Forms.Label label7;
     }
 }
 
