@@ -57,11 +57,18 @@ namespace Cliente_Distribuidas
         private void CargarValoresIniciales()
         {
             CargarListadoPacientesDataGrid();
+            CargarListadoGeneros();
         }
 
         private void CargarListadoPacientesDataGrid()
         {
             dataGridView_PACIENTES.DataSource = PacienteNegocio.DevolverListadoPacientes();
+        }
+        private void CargarListadoGeneros()
+        {
+            List<GeneroEntidad> generos = PacienteNegocio.DevolverListadoGeneros();
+            comboBox_GENERO.DataSource = generos;
+            comboBox_GENERO.DisplayMember = "nombre";
         }
 
         private void dataGridView_PACIENTES_CellClick(object sender, DataGridViewCellEventArgs e)

@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Entidades_Distribuidas;
 using System.Data;
 using System.Data.SqlClient;
@@ -11,6 +8,39 @@ namespace Datos_Distribuidas
 {
     public static class PacienteDatos
     {
+      public static List<GeneroEntidad> DevolverListaGeneros()
+        {
+            try
+            {
+                List<GeneroEntidad> listaGeneros = new List<GeneroEntidad>();
+                SqlConnection conexion = new SqlConnection(Properties.Settings.Default.conexionBD);
+                conexion.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conexion;
+                cmd.CommandType = CommandType.Text;
+
+                cmd.CommandText = @"SELECT [id],[nombre]
+                                      FROM [dbo].[Genero]";
+                using (var dr = cmd.ExecuteReader()) //dr data reader para leer los datos de la base
+                {
+                    while (dr.Read())
+                    {
+                        GeneroEntidad genero = new GeneroEntidad();
+                        genero.Id = Convert.ToInt32(dr["id"].ToString());
+                        genero.Nombre = dr["nombre"].ToString();
+                        listaGeneros.Add(genero);
+                    }
+
+                }
+                conexion.Close();
+                return listaGeneros;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
         public static PacienteEntidad Nuevo(PacienteEntidad pacienteEntidad)
         {
             try
@@ -121,8 +151,7 @@ namespace Datos_Distribuidas
                         PacienteEntidad paciente = new PacienteEntidad();
                         paciente.Id = Convert.ToInt32( dr["id"].ToString());
                         paciente.Nombre = dr["nombre"].ToString();
-                        paciente.Apellido = dr["apellido"].ToString();
-                        
+                        paciente.Apellido = dr["apellido"].ToString();                        
                         paciente.Genero = dr["genero"].ToString();
                         paciente.Cedula = dr["cedula"].ToString();
                         paciente.Telefono = dr["telefono"].ToString();

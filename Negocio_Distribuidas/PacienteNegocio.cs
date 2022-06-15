@@ -28,6 +28,10 @@ namespace Negocio_Distribuidas
         {
             return PacienteDatos.DevolverListadoPacientes();
         }
+        public static List <GeneroEntidad> DevolverListadoGeneros()
+        {
+            return PacienteDatos.DevolverListaGeneros();
+        }
         public static PacienteEntidad DevolverPacientePorID(int IdPaciente)
         {
             return PacienteDatos.DevolverPacientePorID(IdPaciente);
