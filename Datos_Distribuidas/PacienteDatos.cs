@@ -102,6 +102,7 @@ namespace Datos_Distribuidas
                 cmd.CommandType = CommandType.Text;
 
                 cmd.CommandText = @"SELECT p.[id]
+                                  ,p.[id_Genero]
                                   ,p.[nombre]
 	                              ,g.nombre genero
                                   ,p.[apellido]
@@ -121,6 +122,7 @@ namespace Datos_Distribuidas
                         paciente.Id = Convert.ToInt32( dr["id"].ToString());
                         paciente.Nombre = dr["nombre"].ToString();
                         paciente.Apellido = dr["apellido"].ToString();
+                        
                         paciente.Genero = dr["genero"].ToString();
                         paciente.Cedula = dr["cedula"].ToString();
                         paciente.Telefono = dr["telefono"].ToString();
