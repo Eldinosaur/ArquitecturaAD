@@ -34,6 +34,7 @@ namespace Cliente_Distribuidas
         {
             paciente.Nombre = textBox_NOMBRE.Text;
             paciente.Apellido = textBox_APELLIDO.Text;
+            paciente.IdGenero = (int)comboBox_GENERO.SelectedValue;
             paciente.Cedula = textBox_CEDULA.Text;
             paciente.Telefono = textBox_TELEFONO.Text;
             paciente.Direccion = textBox_DIRECCION.Text;
@@ -69,6 +70,7 @@ namespace Cliente_Distribuidas
             List<GeneroEntidad> generos = PacienteNegocio.DevolverListadoGeneros();
             comboBox_GENERO.DataSource = generos;
             comboBox_GENERO.DisplayMember = "nombre";
+            comboBox_GENERO.ValueMember = "id";
         }
 
         private void dataGridView_PACIENTES_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -86,6 +88,7 @@ namespace Cliente_Distribuidas
             textBox_ID.Text = paciente.Id.ToString();
             textBox_NOMBRE.Text = paciente.Nombre;
             textBox_APELLIDO.Text = paciente.Apellido;
+            comboBox_GENERO.SelectedValue = paciente.IdGenero;
             textBox_CEDULA.Text = paciente.Cedula;
             textBox_TELEFONO.Text = paciente.Telefono;
             textBox_DIRECCION.Text = paciente.Direccion;

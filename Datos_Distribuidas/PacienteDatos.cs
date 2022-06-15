@@ -19,7 +19,8 @@ namespace Datos_Distribuidas
                 cmd.Connection = conexion;
                 cmd.CommandType = CommandType.Text;
 
-                cmd.CommandText = @"SELECT [id],[nombre]
+                cmd.CommandText = @"SELECT [id]
+                                           ,[nombre]
                                       FROM [dbo].[Genero]";
                 using (var dr = cmd.ExecuteReader()) //dr data reader para leer los datos de la base
                 {
@@ -52,15 +53,17 @@ namespace Datos_Distribuidas
                 cmd.CommandType = CommandType.Text;
 
                 cmd.CommandText = @"INSERT INTO [dbo].[Paciente]
-                                                ([nombre]
+                                                ([id_Genero]
+                                                ,[nombre]
                                                 ,[apellido]
                                                 ,[cedula]
                                                 ,[telefono]
                                                 ,[direccion]
                                                 ,[numeroIESS])
                                                 VALUES
-                                                (@nombre, @apellido, @cedula, @telefono, @direccion, @numeroIESS);
+                                                (@id_Genero, @nombre, @apellido, @cedula, @telefono, @direccion, @numeroIESS);
                                                 SELECT SCOPE_IDENTITY()";
+                cmd.Parameters.AddWithValue("@id_Genero",pacienteEntidad.IdGenero);
                 cmd.Parameters.AddWithValue("@nombre", pacienteEntidad.Nombre);
                 cmd.Parameters.AddWithValue("@apellido", pacienteEntidad.Apellido);
                 cmd.Parameters.AddWithValue("@cedula", pacienteEntidad.Cedula);
@@ -92,13 +95,15 @@ namespace Datos_Distribuidas
                 cmd.CommandType = CommandType.Text;
 
                 cmd.CommandText = @"UPDATE [dbo].[Paciente]
-                                   SET [nombre] = @nombre
+                                   SET [id_Genero] = @id_Genero 
+                                      ,[nombre] = @nombre
                                       ,[apellido] = @apellido
                                       ,[cedula] = @cedula
                                       ,[telefono] = @telefono
                                       ,[direccion] = @direccion
                                       ,[numeroIESS] =@numeroIESS
                                        WHERE id = @id";
+                cmd.Parameters.AddWithValue("@id_Genero", pacienteEntidad.IdGenero);
                 cmd.Parameters.AddWithValue("@nombre", pacienteEntidad.Nombre);
                 cmd.Parameters.AddWithValue("@apellido", pacienteEntidad.Apellido);
                 cmd.Parameters.AddWithValue("@cedula", pacienteEntidad.Cedula);
@@ -150,6 +155,7 @@ namespace Datos_Distribuidas
                     {
                         PacienteEntidad paciente = new PacienteEntidad();
                         paciente.Id = Convert.ToInt32( dr["id"].ToString());
+                        paciente.IdGenero = Convert.ToInt32(dr["id_Genero"].ToString());
                         paciente.Nombre = dr["nombre"].ToString();
                         paciente.Apellido = dr["apellido"].ToString();                        
                         paciente.Genero = dr["genero"].ToString();
@@ -178,15 +184,18 @@ namespace Datos_Distribuidas
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conexion;
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = @"SELECT [id]
-                                      ,[nombre]
-                                      ,[apellido]
-                                      ,[cedula]
-                                      ,[telefono]
-                                      ,[direccion]
-                                      ,[numeroIESS]
-                                    FROM[dbo].[Paciente]
-                                          WHERE id=@id";
+                cmd.CommandText = @"SELECT p.[id]
+                                  ,p.[id_Genero]
+                                  ,p.[nombre]
+	                              ,g.nombre genero
+                                  ,p.[apellido]
+                                  ,p.[cedula]
+                                  ,p.[telefono]
+                                  ,p.[direccion]
+                                  ,p.[numeroIESS]
+                              FROM [dbo].[Paciente] p
+                              inner join [dbo].[Genero] g on id_Genero=g.id
+                                          WHERE p.id=@id";
                 ;
 
                 cmd.Parameters.AddWithValue("@id", idPaciente);
@@ -196,6 +205,7 @@ namespace Datos_Distribuidas
                     if (dr.HasRows)
                     {
                         paciente.Id = Convert.ToInt32(dr["id"].ToString());
+                        paciente.IdGenero = Convert.ToInt32(dr["id_Genero"].ToString());
                         paciente.Nombre = dr["nombre"].ToString();
                         paciente.Apellido = dr["apellido"].ToString();
                         paciente.Cedula = dr["cedula"].ToString();
