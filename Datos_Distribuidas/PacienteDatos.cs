@@ -90,7 +90,6 @@ namespace Datos_Distribuidas
                 throw;
             }
         }
-
         public static List<PacienteEntidad> DevolverListadoPacientes()
         {
             try
@@ -102,14 +101,16 @@ namespace Datos_Distribuidas
                 cmd.Connection = conexion;
                 cmd.CommandType = CommandType.Text;
 
-                cmd.CommandText = @"SELECT [id]
-                                      ,[nombre]
-                                      ,[apellido]
-                                      ,[cedula]
-                                      ,[telefono]
-                                      ,[direccion]
-                                      ,[numeroIESS]
-                                  FROM [dbo].[Paciente]";
+                cmd.CommandText = @"SELECT p.[id]
+                                  ,p.[nombre]
+	                              ,g.nombre genero
+                                  ,p.[apellido]
+                                  ,p.[cedula]
+                                  ,p.[telefono]
+                                  ,p.[direccion]
+                                  ,p.[numeroIESS]
+                              FROM [dbo].[Paciente] p
+                              inner join [dbo].[Genero] g on id_Genero=g.id";
 
                 //using lo que se usa se libera de memoria despues de la ejecucion
                 using (var dr = cmd.ExecuteReader()) //dr data reader para leer los datos de la base
@@ -120,6 +121,7 @@ namespace Datos_Distribuidas
                         paciente.Id = Convert.ToInt32( dr["id"].ToString());
                         paciente.Nombre = dr["nombre"].ToString();
                         paciente.Apellido = dr["apellido"].ToString();
+                        paciente.Genero = dr["genero"].ToString();
                         paciente.Cedula = dr["cedula"].ToString();
                         paciente.Telefono = dr["telefono"].ToString();
                         paciente.Direccion = dr["direccion"].ToString();

@@ -15,14 +15,17 @@ namespace Entidades_Distribuidas
         public string Telefono { get; set; }
         public string Direccion { get; set; }
         public string NumeroIESS { get; set; }
+        public string Genero { get; set; }
         public PacienteEntidad()
         {
         }
-        public PacienteEntidad(int id, string nombre, string apellido, string cedula, string telefono, string direccion, string NumeroIESS)
+        public PacienteEntidad(int id, string nombre, string apellido, string genero,
+            string cedula, string telefono, string direccion, string NumeroIESS)
         {
             Id = id;
             Nombre = nombre;
             Apellido = apellido;
+            Genero = genero;
             Cedula = cedula;
             Telefono = telefono;
             Direccion = direccion;

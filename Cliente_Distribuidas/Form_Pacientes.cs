@@ -85,6 +85,9 @@ namespace Cliente_Distribuidas
             textBox_numeroIESS.Text = paciente.NumeroIESS;
         }
 
-        
+        private void comboBox_GENERO_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

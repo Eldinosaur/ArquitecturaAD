@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.textBox_numeroIESS = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button_GUARDAR = new System.Windows.Forms.Button();
@@ -46,6 +47,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView_PACIENTES = new System.Windows.Forms.DataGridView();
+            this.comboBox_GENERO = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_PACIENTES)).BeginInit();
@@ -53,6 +55,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBox_GENERO);
+            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.textBox_numeroIESS);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.button_GUARDAR);
@@ -75,9 +79,18 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DATOS PACIENTE";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(14, 201);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(53, 13);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "GENERO";
+            // 
             // textBox_numeroIESS
             // 
-            this.textBox_numeroIESS.Location = new System.Drawing.Point(17, 467);
+            this.textBox_numeroIESS.Location = new System.Drawing.Point(17, 534);
             this.textBox_numeroIESS.MaxLength = 10;
             this.textBox_numeroIESS.Name = "textBox_numeroIESS";
             this.textBox_numeroIESS.Size = new System.Drawing.Size(220, 20);
@@ -86,7 +99,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(14, 451);
+            this.label7.Location = new System.Drawing.Point(14, 518);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(71, 13);
             this.label7.TabIndex = 13;
@@ -94,7 +107,7 @@
             // 
             // button_GUARDAR
             // 
-            this.button_GUARDAR.Location = new System.Drawing.Point(107, 586);
+            this.button_GUARDAR.Location = new System.Drawing.Point(104, 611);
             this.button_GUARDAR.Name = "button_GUARDAR";
             this.button_GUARDAR.Size = new System.Drawing.Size(98, 39);
             this.button_GUARDAR.TabIndex = 8;
@@ -138,7 +151,7 @@
             // 
             // textBox_CEDULA
             // 
-            this.textBox_CEDULA.Location = new System.Drawing.Point(17, 230);
+            this.textBox_CEDULA.Location = new System.Drawing.Point(17, 297);
             this.textBox_CEDULA.MaxLength = 10;
             this.textBox_CEDULA.Name = "textBox_CEDULA";
             this.textBox_CEDULA.Size = new System.Drawing.Size(220, 20);
@@ -147,7 +160,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(14, 214);
+            this.label4.Location = new System.Drawing.Point(14, 281);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 13);
             this.label4.TabIndex = 6;
@@ -155,7 +168,7 @@
             // 
             // textBox_TELEFONO
             // 
-            this.textBox_TELEFONO.Location = new System.Drawing.Point(17, 287);
+            this.textBox_TELEFONO.Location = new System.Drawing.Point(17, 354);
             this.textBox_TELEFONO.MaxLength = 10;
             this.textBox_TELEFONO.Name = "textBox_TELEFONO";
             this.textBox_TELEFONO.Size = new System.Drawing.Size(220, 20);
@@ -164,7 +177,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 271);
+            this.label3.Location = new System.Drawing.Point(14, 338);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 13);
             this.label3.TabIndex = 4;
@@ -172,7 +185,7 @@
             // 
             // textBox_DIRECCION
             // 
-            this.textBox_DIRECCION.Location = new System.Drawing.Point(17, 350);
+            this.textBox_DIRECCION.Location = new System.Drawing.Point(17, 417);
             this.textBox_DIRECCION.MaxLength = 100;
             this.textBox_DIRECCION.Multiline = true;
             this.textBox_DIRECCION.Name = "textBox_DIRECCION";
@@ -182,7 +195,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 334);
+            this.label2.Location = new System.Drawing.Point(14, 401);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 13);
             this.label2.TabIndex = 2;
@@ -211,7 +224,7 @@
             this.groupBox2.Controls.Add(this.dataGridView_PACIENTES);
             this.groupBox2.Location = new System.Drawing.Point(406, 13);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(728, 655);
+            this.groupBox2.Size = new System.Drawing.Size(852, 655);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "LISTADO DE PACIENTES";
@@ -221,16 +234,25 @@
             this.dataGridView_PACIENTES.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_PACIENTES.Location = new System.Drawing.Point(6, 19);
             this.dataGridView_PACIENTES.Name = "dataGridView_PACIENTES";
-            this.dataGridView_PACIENTES.Size = new System.Drawing.Size(716, 630);
+            this.dataGridView_PACIENTES.Size = new System.Drawing.Size(840, 630);
             this.dataGridView_PACIENTES.TabIndex = 0;
             this.dataGridView_PACIENTES.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_PACIENTES_CellClick);
+            // 
+            // comboBox_GENERO
+            // 
+            this.comboBox_GENERO.FormattingEnabled = true;
+            this.comboBox_GENERO.Location = new System.Drawing.Point(17, 232);
+            this.comboBox_GENERO.Name = "comboBox_GENERO";
+            this.comboBox_GENERO.Size = new System.Drawing.Size(220, 21);
+            this.comboBox_GENERO.TabIndex = 15;
+            this.comboBox_GENERO.SelectedIndexChanged += new System.EventHandler(this.comboBox_GENERO_SelectedIndexChanged);
             // 
             // Form_Pacientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1146, 680);
+            this.ClientSize = new System.Drawing.Size(1270, 680);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form_Pacientes";
@@ -264,6 +286,8 @@
         private System.Windows.Forms.DataGridView dataGridView_PACIENTES;
         private System.Windows.Forms.TextBox textBox_numeroIESS;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox comboBox_GENERO;
     }
 }
 
