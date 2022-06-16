@@ -36,5 +36,9 @@ namespace Negocio_Distribuidas
         {
             return PacienteDatos.DevolverPacientePorID(IdPaciente);
         }
+        public static bool EliminarPaciente(int identificador)
+        {
+            return PacienteDatos.EliminarPaciente(identificador);
+        }
     }
 }

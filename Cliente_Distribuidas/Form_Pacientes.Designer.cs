@@ -48,6 +48,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView_PACIENTES = new System.Windows.Forms.DataGridView();
             this.comboBox_GENERO = new System.Windows.Forms.ComboBox();
+            this.button_ELIMINAR = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_PACIENTES)).BeginInit();
@@ -55,6 +56,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button_ELIMINAR);
             this.groupBox1.Controls.Add(this.comboBox_GENERO);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.textBox_numeroIESS);
@@ -107,7 +109,7 @@
             // 
             // button_GUARDAR
             // 
-            this.button_GUARDAR.Location = new System.Drawing.Point(104, 611);
+            this.button_GUARDAR.Location = new System.Drawing.Point(36, 601);
             this.button_GUARDAR.Name = "button_GUARDAR";
             this.button_GUARDAR.Size = new System.Drawing.Size(98, 39);
             this.button_GUARDAR.TabIndex = 8;
@@ -221,20 +223,27 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.AutoSize = true;
             this.groupBox2.Controls.Add(this.dataGridView_PACIENTES);
             this.groupBox2.Location = new System.Drawing.Point(406, 13);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(852, 655);
+            this.groupBox2.Size = new System.Drawing.Size(852, 665);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "LISTADO DE PACIENTES";
             // 
             // dataGridView_PACIENTES
             // 
+            this.dataGridView_PACIENTES.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView_PACIENTES.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_PACIENTES.Location = new System.Drawing.Point(6, 19);
             this.dataGridView_PACIENTES.Name = "dataGridView_PACIENTES";
-            this.dataGridView_PACIENTES.Size = new System.Drawing.Size(840, 630);
+            this.dataGridView_PACIENTES.Size = new System.Drawing.Size(840, 627);
             this.dataGridView_PACIENTES.TabIndex = 0;
             this.dataGridView_PACIENTES.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_PACIENTES_CellClick);
             // 
@@ -246,6 +255,16 @@
             this.comboBox_GENERO.Size = new System.Drawing.Size(220, 21);
             this.comboBox_GENERO.TabIndex = 15;
             this.comboBox_GENERO.SelectedIndexChanged += new System.EventHandler(this.comboBox_GENERO_SelectedIndexChanged);
+            // 
+            // button_ELIMINAR
+            // 
+            this.button_ELIMINAR.Location = new System.Drawing.Point(174, 601);
+            this.button_ELIMINAR.Name = "button_ELIMINAR";
+            this.button_ELIMINAR.Size = new System.Drawing.Size(98, 39);
+            this.button_ELIMINAR.TabIndex = 16;
+            this.button_ELIMINAR.Text = "Eliminar";
+            this.button_ELIMINAR.UseVisualStyleBackColor = true;
+            this.button_ELIMINAR.Click += new System.EventHandler(this.button_ELIMINAR_Click);
             // 
             // Form_Pacientes
             // 
@@ -263,6 +282,7 @@
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_PACIENTES)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -288,6 +308,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox comboBox_GENERO;
+        private System.Windows.Forms.Button button_ELIMINAR;
     }
 }
 

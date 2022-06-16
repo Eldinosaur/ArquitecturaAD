@@ -227,5 +227,34 @@ namespace Datos_Distribuidas
 
 
         }
+        public static bool EliminarPaciente(int identificador)
+        {
+            try
+            {
+                SqlConnection conexion = new SqlConnection(Properties.Settings.Default.conexionBD);
+                conexion.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conexion;
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "DELETE FROM[dbo].[Paciente] WHERE id =@id";
+                cmd.Parameters.AddWithValue("@id", identificador);
+                var filasAfectadas = Convert.ToInt32(cmd.ExecuteNonQuery());
+                conexion.Close();
+                if (filasAfectadas > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+
+            }
+            catch (Exception)
+            {
+                
+               throw;
+            }
+        }
     }
 }

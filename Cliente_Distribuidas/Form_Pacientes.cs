@@ -99,5 +99,24 @@ namespace Cliente_Distribuidas
         {
 
         }
+
+        private void button_ELIMINAR_Click(object sender, EventArgs e)
+        {
+            EliminarPaciente();
+        }
+
+        private void EliminarPaciente()
+        {
+            if(MessageBox.Show("¿Está Ud. seguro de eliminar el registro?", "Eliminar",
+                MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                if (PacienteNegocio.EliminarPaciente(paciente.Id))
+                {
+                    MessageBox.Show("El registro se elimino satisfactoriamente", 
+                        "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    CargarListadoPacientesDataGrid();
+                }
+            }
+        }
     }
 }
