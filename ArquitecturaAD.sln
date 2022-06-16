@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.2.32519.379
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cliente_Distribuidas", "Cliente_Distribuidas\Cliente_Distribuidas.csproj", "{EE46F8E4-6ECD-4C5C-9C19-3035ED836E4A}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos_Distribuidas", "Datos_Distribuidas\Datos_Distribuidas.csproj", "{73F01521-2C75-4727-BA04-21359A313316}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades_Distribuidas", "Entidades_Distribuidas\Entidades_Distribuidas.csproj", "{4E96128D-A345-4CCE-8816-EA246654F3A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatosLinq", "DatosLinq\DatosLinq.csproj", "{B2DA1EED-0AC0-4F2F-BD6F-287DB4156C50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{4E96128D-A345-4CCE-8816-EA246654F3A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E96128D-A345-4CCE-8816-EA246654F3A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E96128D-A345-4CCE-8816-EA246654F3A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2DA1EED-0AC0-4F2F-BD6F-287DB4156C50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2DA1EED-0AC0-4F2F-BD6F-287DB4156C50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2DA1EED-0AC0-4F2F-BD6F-287DB4156C50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2DA1EED-0AC0-4F2F-BD6F-287DB4156C50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
